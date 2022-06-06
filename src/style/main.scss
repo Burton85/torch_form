@@ -1,0 +1,10 @@
+@import './abstract/variables';
+@import './abstract/mixin';
+@import './abstract/animations';
+
+@import './normalize/reset';
+@import './normalize/base';
+@import './normalize/typography';
+@import './normalize/utilities';
+
+@import './view/home.scss';

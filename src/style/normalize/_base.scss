@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* ________________________________________________________________________________ */
+/* XS 超小屏幕（手机，大於 0px） 及共用 ___________________________________________ */
+/* ________________________________________________________________________________ */
+@media (min-width: 0px) {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    touch-action: pan-y;
+  }
+  html {
+    font-size: 10px;
+  }
+  *,
+  body {
+    box-sizing: border-box;
+    font-family: $fontfamily;
+    font-size: 2em;
+    font-weight: 400;
+    background-color: $home__bg;
+  }
+  #app {
+    display: block;
+    position: relative;
+    font-size: 2em;
+    margin: auto;
+    max-width: 640px;
+    min-height: 100vh;  
+    font-family: $fontfamily;
+    a {
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+    }
+    button {
+      outline: none;
+    }
+  }
+
+  body::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  .footer {
+    @include flex-jcc-atc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto;
+    font-size: $f__12;
+    color: $text__color--light;
+    background-color: $gray__color;
+  }
+}
+/* ________________________________________________________________________________ */
+/* SM 小屏幕（平板，大於等於 768px） ______________________________________________ */
+/* ________________________________________________________________________________ */
+@media (min-width: 768px) {
+  .footer {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,28 @@
+<template>
+  <div class="wrapper" id="app">
+    <router-view></router-view>
+    <div class="footer">
+      powered by Media Art Team
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+  // mounted() {
+  //   window.addEventListener('resize', () => {
+  //     this.$router.go({ path: this.$route.path, query: this.$route.query })
+  //   })
+  // },
+  // beforeDestroy() {
+  //   window.removeEventListener('resize', () => {
+  //     this.$router.go({ path: this.$route.path, query: this.$route.query })
+  //   })
+  // }
+}
+</script>
+
+<style lang="scss">
+@import './style/main.scss';
+</style>

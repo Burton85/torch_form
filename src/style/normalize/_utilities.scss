@@ -1,0 +1,110 @@
+@for $i from 1 through 12 {
+  .u-mt-#{$i} {
+    margin-top: #{$i}rem !important;
+  }
+  .u-mb-#{$i} {
+    margin-bottom: #{$i}rem !important;
+  }
+  .u-ml-#{$i} {
+    margin-left: #{$i}rem !important;
+  }
+  .u-mr-#{$i} {
+    margin-right: #{$i}rem !important;
+  }
+  .u-mlr-#{$i} {
+    margin-left: #{$i}rem !important;
+    margin-right: #{$i}rem !important;
+  }
+  .u-mtb-#{$i} {
+    margin-top: #{$i}rem !important;
+    margin-bottom: #{$i}rem !important;
+  }
+}
+@for $i from 1 through 12 {
+  .u-pt-#{$i} {
+    padding-top: #{$i}rem !important;
+  }
+  .u-pb-#{$i} {
+    padding-bottom: #{$i}rem !important;
+  }
+  .u-pl-#{$i} {
+    padding-left: #{$i}rem !important;
+  }
+  .u-pr-#{$i} {
+    padding-right: #{$i}rem !important;
+  }
+  .u-plr-#{$i} {
+    padding-left: #{$i}rem !important;
+    padding-right: #{$i}rem !important;
+  }
+  .u-ptb-#{$i} {
+    padding-top: #{$i}rem !important;
+    padding-bottom: #{$i}rem !important;
+  }
+}
+.text {
+  &-lowercase {
+    text-transform: lowercase !important;
+  }
+  &-uppercase {
+    text-transform: uppercase !important;
+  }
+
+  &-capitalize {
+    text-transform: capitalize !important;
+  }
+  &-justify {
+    text-align: justify !important;
+  }
+
+  &-wrap {
+    white-space: normal !important;
+  }
+
+  &-nowrap {
+    white-space: nowrap !important;
+  }
+
+  &-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &-left {
+    text-align: left !important;
+  }
+
+  &-right {
+    text-align: right !important;
+  }
+
+  &-center {
+    text-align: center !important;
+  }
+}
+
+.font {
+  &-weight-light {
+    font-weight: 300 !important;
+  }
+  &-weight-lighter {
+    font-weight: lighter !important;
+  }
+
+  &-weight-normal {
+    font-weight: 400 !important;
+  }
+
+  &-weight-bold {
+    font-weight: 700 !important;
+  }
+
+  &-weight-bolder {
+    font-weight: bolder !important;
+  }
+
+  &-italic {
+    font-style: italic !important;
+  }
+}

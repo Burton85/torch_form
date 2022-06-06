@@ -1,0 +1,17 @@
+//mixin
+
+@mixin flex-jcc-atc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-jcs-ats {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+@mixin pseudo-element {
+  content: '';
+  display: block;
+  position: absolute;
+}
