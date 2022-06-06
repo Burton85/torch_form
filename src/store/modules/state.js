@@ -1,7 +1,7 @@
 const MY_ANSWERS = 'my-answers'
 
 const state = {
-  answers: JSON.parse(localStorage.getItem(MY_ANSWERS) || '{Q1:0,Q2:0,Q3:0}'),
+  answers: JSON.parse(localStorage.getItem(MY_ANSWERS) || '{}'),
 }
 
 const getters = {
@@ -11,15 +11,15 @@ const getters = {
 }
 
 const actions = {
-  async getAnswers(context,newAnswer) {
+  async getAnswers(context, newAnswer) {
     context.commit('changeAnswers', newAnswer)
   },
 }
 
 const mutations = {
   changeAnswers(state, newAnswer) {
-    state.answers[newAnswer.type]=state.answers[newAnswer.value]
-    localStorage.setItem(MY_ANSWERS, JSON.stringify(state.answers))
+    state.answers[newAnswer.type] = state.answers[newAnswer.value]
+    // localStorage.setItem(MY_ANSWERS, JSON.stringify(state.answers))
     state.answers = newAnswer
   },
 }
