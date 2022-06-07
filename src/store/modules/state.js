@@ -11,16 +11,17 @@ const getters = {
 }
 
 const actions = {
-  async getAnswers(context, newAnswer) {
+  setAnswers(context, newAnswer) {
+    console.log('setAnswers', newAnswer)
     context.commit('changeAnswers', newAnswer)
   },
 }
 
 const mutations = {
   changeAnswers(state, newAnswer) {
-    state.answers[newAnswer.type] = state.answers[newAnswer.value]
-    // localStorage.setItem(MY_ANSWERS, JSON.stringify(state.answers))
-    state.answers = newAnswer
+    state.answers[newAnswer[0]] = newAnswer[1]
+    console.log(state.answers)
+    localStorage.setItem(MY_ANSWERS, JSON.stringify(state.answers))
   },
 }
 

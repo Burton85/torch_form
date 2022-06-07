@@ -2,7 +2,7 @@
   <div class="home">
     <div class="home__container">
       <canvas id="canvas"> TORCH </canvas>
-      <a @click="goQuestion()" class="home__title">START</a>
+      <a @click="goQuestion()" class="home__start">START</a>
     </div>
   </div>
 </template>

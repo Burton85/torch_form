@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-$fontfamily:'Press Start 2P', 'Microsoft JhengHei','Noto Serif', 'Noto Sans Kannada', 'Open Sans','WenQuanYi Zen Hei', Arial, sans-serif;
+@font-face {
+    font-family: Cubic;
+    src: url('./font/Cubic/Cubic_11_1.010_R.woff2');
+}
+$fontfamily:Cubic,'Press Start 2P', 'Microsoft JhengHei','Noto Serif', 'Noto Sans Kannada', 'Open Sans','WenQuanYi Zen Hei', Arial, sans-serif;
 
 //main
-$main__color: #e8414d;
+$main__color: #e8424d;
 $sub__color: #fbcdce;
 $sub__color--2: #f58e8f;
 $orange__color: #f27649;
@@ -12,6 +15,7 @@ $gray__color--2: #a6a6a8;
 $gray__color--3: #d1d1d6;
 $gray__color--4: #f2f2f2;
 $grey__color: #535659;
+$grey__color--2: #53565988;
 $white__color: #ffffff;
 $text__color: #000000;
 $shadow__color: #00000025;

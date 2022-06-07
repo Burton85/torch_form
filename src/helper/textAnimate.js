@@ -68,7 +68,7 @@ export default function (callback) {
           var i = (y * imgData.width + x) * 4;
 
           if (imgData.data[i + 3] >= 125) {
-            var color = "#e50012";
+            var color = "#e8424d";
 
             var x_random = x + Math.random() * 20,
               vx = -Math.random() * 200 + 400,
@@ -285,7 +285,7 @@ export default function (callback) {
     var imgctx = img.getContext("2d");
     imgctx.textAlign = "center";
     imgctx.textBaseline = "middle";
-    imgctx.font = "10em 'Press Start 2P'"
+    imgctx.font = "7em 'Press Start 2P'"
     imgctx.fillText(text || 'TORCH', img.width / 2, img.height / 2);
     canvasHandle.init(callback);
   }

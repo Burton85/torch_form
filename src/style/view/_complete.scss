@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* ________________________________________________________________________________ */
+/* XS 超小屏幕（手机，大於 0px） 及共用 ___________________________________________ */
+/* ________________________________________________________________________________ */
+@media (min-width: 0px) {
+  .complete {
+    display: block;
+    width: 100%;
+    height: 100%;
+    &__container {
+      position: relative;
+      @include flex-jcc-atc;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      // background: $white__color;
+    }
+    &__start{
+        @include flex-jcc-atc;
+        width: 12em;
+        height: 4em;
+        margin-top: 4em;
+        opacity: 0;
+        border-radius: 1.2em;
+        font-size: .8em;
+        font-family: 'Press Start 2P';
+        color: $home__bg;
+        text-align: center;
+        background-color: $main__color;
+        // text-shadow: 0.1em 0.1em $grey__color;
+        box-shadow: .25em .25em .25em .05em rgba(51, 51, 51, 0.5);
+        transition: .8s;
+        &.show{
+          animation-delay: .8s !important;
+        }
+        &:visited,&:hover,&:link{
+          color: $home__bg;
+        }
+        &:hover{
+          transform: translate(-48%,2%);
+          box-shadow: .1em .1em .25em .05em rgba(51, 51, 51, 0.5);
+        }
+        &:active{
+          transform: translate(-48%,2%);
+          box-shadow: .01em .01em .25em .3em rgba(51, 51, 51, 0.5);
+        }
+        &::after{
+          @include pseudo-element;
+          content: "\203A";
+          right: .8em;
+          top: 50%;
+          transform: translateY(-50%);
+          animation: goRight 1s 1s infinite;
+        }
+    }
+    &__title{
+      display: initial;
+      width: 100%;
+      padding:3em 1em 2em;
+      color: $main__color;
+      font-size: 1em;
+      font-weight: bold;
+      font-family: 'Press Start 2P';
+      line-height: 1.75;
+      letter-spacing: .25em;
+      text-shadow: 0.1em 0.1em 0.05em $grey__color--2;
+      box-sizing: border-box;
+      white-space: pre-wrap;
+    }
+    img{
+      width: 90%;
+      opacity: 0;
+      box-shadow: .25em .25em .25em .05em rgba(51, 51, 51, 0.5);
+    }
+    .show{
+      animation: popup 1s linear alternate forwards;
+    }
+  }
+}
+
+/* ________________________________________________________________________________ */
+/* SM 小屏幕（平板，大於等於 768px） ______________________________________________ */
+/* ________________________________________________________________________________ */
+@media (min-width: 768px) {
+  .complete{
+    &__title{
+      padding:3em 0em 2em;
+    }
+    &__start{
+      margin-top: 2.5em;
+    }
+  }
+}
+

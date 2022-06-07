@@ -29,16 +29,22 @@ const router = new Router({
         {
           path: '/question/q2',
           name: 'q2',
-          component: () => import('../components/HelloWorld.vue'),
+          component: () => import('../components/Q2.vue'),
           meta: { title: 'Question Page', type: 'q2' }
         },
         {
           path: '/question/q3',
           name: 'q3',
-          component: () => import('../components/HelloWorld.vue'),
+          component: () => import('../components/Q3.vue'),
           meta: { title: 'Question Page', type: 'q3' }
         }
       ]
+    },
+    {
+      path: '/complete',
+      name: 'complete',
+      component: () => import('../views/Complete.vue'),
+      meta: { title: 'Complete' },
     },
     {
       path: '*',

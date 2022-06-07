@@ -3,15 +3,13 @@
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
-    <div class="footer">
-      powered by Media Art Team
-    </div>
+    <div class="footer">Powered by Media Art Team</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: 'App'
   // mounted() {
   //   window.addEventListener('resize', () => {
   //     this.$router.go({ path: this.$route.path, query: this.$route.query })
