@@ -3,7 +3,7 @@
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
-    <div class="footer">Powered by Media Art Team</div>
+    <div class="footer">Powered by Art & Media Department</div>
   </div>
 </template>
 

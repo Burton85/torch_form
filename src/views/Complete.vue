@@ -17,7 +17,7 @@ export default {
     return {
       textleng: 0,
       leng: 0,
-      congra: 'CONGRATULATIONS! This gift is for you',
+      congra: 'Congrats! This gift is for you.',
       scrResult: '1'
     }
   },

@@ -68,7 +68,7 @@ export default function (callback) {
           var i = (y * imgData.width + x) * 4;
 
           if (imgData.data[i + 3] >= 125) {
-            var color = "#e8424d";
+            var color = "#e50012";
 
             var x_random = x + Math.random() * 20,
               vx = -Math.random() * 200 + 400,

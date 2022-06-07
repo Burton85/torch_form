@@ -63,14 +63,14 @@
         transform: translate(2%,2%);
         box-shadow: .01em .01em .25em .3em rgba(51, 51, 51, 0.5);
       }
-      &::after{
-        @include pseudo-element;
-        content: "\203A";
-        right: 1.5em;
-        top: 50%;
-        transform: translateY(-50%);
-        animation: goRight 1s 1s infinite;
-      }
+      // &::after{
+      //   @include pseudo-element;
+      //   content: "\203A";
+      //   right: 1.5em;
+      //   top: 50%;
+      //   transform: translateY(-50%);
+      //   animation: goRight 1s 1s infinite;
+      // }
       &.show{
         animation: popup 1s linear alternate forwards;
       }
@@ -85,6 +85,9 @@
   .question{
     &__answers{
       // padding: 8em 2em;
+    }
+    &__title{
+      white-space: nowrap;
     }
     &__button{
       width: 20em;
