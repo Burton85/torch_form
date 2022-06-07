@@ -285,7 +285,7 @@ export default function (callback) {
     var imgctx = img.getContext("2d");
     imgctx.textAlign = "center";
     imgctx.textBaseline = "middle";
-    imgctx.font = "100px 'Press Start 2P'";
+    imgctx.font = "10em 'Press Start 2P'"
     imgctx.fillText(text || 'TORCH', img.width / 2, img.height / 2);
     canvasHandle.init(callback);
   }

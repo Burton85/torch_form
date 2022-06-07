@@ -18,7 +18,6 @@
   body {
     box-sizing: border-box;
     font-family: $fontfamily;
-    font-size: 2em;
     font-weight: 400;
     background-color: $home__bg;
   }
@@ -50,9 +49,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
+    padding: 0.5em 0;
     margin-top: auto;
-    font-size: $f__12;
+    font-size: 0.3em;
     color: $text__color--light;
     background-color: $gray__color;
   }
@@ -61,8 +60,5 @@
 /* SM 小屏幕（平板，大於等於 768px） ______________________________________________ */
 /* ________________________________________________________________________________ */
 @media (min-width: 768px) {
-  .footer {
-    padding: 5px 0;
-    font-size: 12px;
-  }
+
 }

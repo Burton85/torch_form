@@ -3,43 +3,55 @@
 /* XS 超小屏幕（手机，大於 0px） 及共用 ___________________________________________ */
 /* ________________________________________________________________________________ */
 @media (min-width: 0px) {
-  .home {
+  .question {
     display: block;
     width: 100%;
     height: 100%;
     &__container {
-      width: 80%;
+      width: 100%;
       height: 100%;
+      padding:3em 1em;
       box-sizing: border-box;
       // background: $white__color;
     }
     &__title{
-      position: absolute;
+      color: $main__color;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 0.1em 0.1em $grey__color;
+    }
+    &__answers{
       @include flex-jcc-atc;
-      width: 9em;
-      height: 3em;
-      top: 52%;
-      left: 50%;
-      opacity: 0;
-      border-radius: 1.5em;
+      flex-direction: column;
+      padding: 5em 2em;
+
+    }
+    &__button{
+      @include flex-jcc-atc;
+      cursor: pointer;
+      position: relative;
+      width: 20em;
+      // height: 3em;
+      margin-bottom: 2em;
+      padding: .6em 2em 1em;
+      border-radius: 5em;
       font-size: .8em;
       color: $home__bg;
+      line-height: 1.5;
       text-align: center;
-      animation: Showing 1s 3s linear alternate forwards;
       background-color: $main__color;
       text-shadow: 0.1em 0.1em $grey__color;
       box-shadow: .25em .25em .25em .05em rgba(51, 51, 51, 0.5);
-      transform: translateX(-50%);
       transition: .8s;
       &:visited,&:hover,&:link{
         color: $home__bg;
       }
       &:hover{
-        transform: translate(-48%,2%);
+        transform: translate(2%,2%);
         box-shadow: .1em .1em .25em .05em rgba(51, 51, 51, 0.5);
       }
       &:active{
-        transform: translate(-48%,2%);
+        transform: translate(2%,2%);
         box-shadow: .01em .01em .25em .3em rgba(51, 51, 51, 0.5);
       }
       &::after{

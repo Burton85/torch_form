@@ -23,7 +23,7 @@ const router = new Router({
         {
           path: '/question/q1',
           name: 'q1',
-          component: () => import('../components/HelloWorld.vue'),
+          component: () => import('../components/Q1.vue'),
           meta: { title: 'Question Page', type: 'q1' }
         },
         {

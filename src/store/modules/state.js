@@ -1,7 +1,7 @@
 const MY_ANSWERS = 'my-answers'
 
 const state = {
-  answers: JSON.parse(localStorage.getItem(MY_ANSWERS) || '{}'),
+  answers: JSON.parse(localStorage.getItem(MY_ANSWERS) || '[0,0,0]'),
 }
 
 const getters = {
