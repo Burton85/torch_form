@@ -22,7 +22,8 @@
         height: 4em;
         margin-top: 4em;
         opacity: 0;
-        border-radius: 1.2em;
+        padding-right: 1em;
+        border-radius: .5em;
         font-size: .8em;
         font-family: 'Press Start 2P';
         color: $home__bg;
@@ -30,7 +31,7 @@
         background-color: $main__color;
         // text-shadow: 0.1em 0.1em $grey__color;
         box-shadow: .25em .25em .25em .05em rgba(51, 51, 51, 0.5);
-        transition: .8s;
+        transition:all .8s ease;
         &.show{
           animation-delay: .8s !important;
         }
@@ -72,6 +73,7 @@
       width: 90%;
       opacity: 0;
       box-shadow: .25em .25em .25em .05em rgba(51, 51, 51, 0.5);
+      transition:all .8s ease;
     }
     .show{
       animation: popup 1s linear alternate forwards;
@@ -86,7 +88,7 @@
   .complete{
     &__title{
       padding:3em 0em 2em;
-      white-space: nowrap;
+      // white-space: nowrap;
     }
     &__start{
       margin-top: 2.5em;
